@@ -2,7 +2,7 @@
 name: flutter-tooltips-patterns
 description: Patterns for feature onboarding tooltips in Flutter using OverlayEntry, step-based state (Bloc/Cubit), widget snapshots, and target GlobalKeys.
 metadata:
-  author: Stanislav [MADTeacher] Chernyshev
+  author: Maxkishchenko
   version: "1.0"
 ---
 

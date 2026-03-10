@@ -21,7 +21,7 @@ Limitations:
 - Always pushes new routes regardless of current state
 
 ### Complex Apps (Deep Linking, Web, Multiple Navigators)
-Use **go_router** (declarative routing). Recommended for:
+Use **go_router** (declarative routing) or **auto_route** (typed, code-generated routing). Recommended for:
 - Apps requiring deep linking
 - Web applications with browser history
 - Complex navigation patterns
@@ -29,6 +29,26 @@ Use **go_router** (declarative routing). Recommended for:
 - URL-based navigation
 
 Example: `assets/go_router_basic.dart`
+
+## Router Decision Matrix
+
+| Criteria | go_router | auto_route |
+|----------|-----------|------------|
+| Setup complexity | Lower, minimal setup | Higher, needs generation setup |
+| Type-safe route args | Basic (manual patterns) | Strongly typed generated routes |
+| Deep linking | Strong | Strong |
+| Route guards | Built-in redirects/logic | Built-in guard classes |
+| Nested navigation | Good | Excellent for complex nesting |
+| Web URL support | Excellent | Excellent |
+| Team fit | Prefer simple declarative config | Prefer scalable typed architecture |
+
+### Choose go_router when
+- You want fast setup and clear declarative route definitions.
+- The app has moderate complexity and you do not need generated route types.
+
+### Choose auto_route when
+- You want generated route classes with compile-time argument safety.
+- You need advanced nested routing or structured guards with less manual boilerplate.
 
 ## Common Patterns
 
@@ -74,7 +94,7 @@ Example: `assets/returning_data.dart`
 
 ### Deep Linking Behavior
 
-| Platform | Navigator | Router/go_router |
+| Platform | Navigator | Router (go_router/auto_route) |
 |----------|-----------|-------------------|
 | iOS (not launched) | Gets initialRoute "/" then pushRoute | Gets initialRoute "/" then RouteInformationParser |
 | Android (not launched) | Gets initialRoute containing route | Gets initialRoute with route path |
@@ -100,6 +120,6 @@ See [web-navigation.md](web-navigation.md) for detailed setup.
 ### Navigation Methods
 
 - **Navigator**: Imperative, creates pageless routes (not deep-linkable)
-- **Router/go_router**: Declarative, creates page-backed routes (deep-linkable)
+- **Router (go_router/auto_route)**: Declarative, creates page-backed routes (deep-linkable)
 
 When using Router with Navigator together, removing a page-backed route also removes all subsequent pageless routes.

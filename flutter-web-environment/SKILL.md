@@ -2,7 +2,7 @@
 name: flutter-web-environment
 description: Comprehensive Flutter Web environment skill covering setup, dev server configuration, renderers, Wasm, bootstrap customization, embedding modes, interop constraints, testing, and deployment.
 metadata:
-  author: Stanislav [MADTeacher] Chernyshev
+  author: Maxkishchenko
   version: "1.0"
 ---
 

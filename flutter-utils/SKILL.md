@@ -2,7 +2,7 @@
 name: flutter-utils
 description: Practical utility patterns for Flutter projects including URL launching, validators, input formatting, amount formatting, route/context extensions, and country-code helpers.
 metadata:
-  author: Stanislav [MADTeacher] Chernyshev
+  author: Maxkishchenko
   version: "1.0"
 ---
 

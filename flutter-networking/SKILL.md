@@ -2,7 +2,7 @@
 name: flutter-networking
 description: Comprehensive Flutter networking guidance using Dio and Retrofit for typed REST APIs, authentication interceptors, robust error handling, and performance optimization. Use when implementing GET POST PUT DELETE requests, retries, token refresh flows, background parsing, or network architecture in Flutter apps.
 metadata:
-  author: Stanislav [MADTeacher] Chernyshev
+  author: Maxkishchenko
   version: "1.1"
 ---
 

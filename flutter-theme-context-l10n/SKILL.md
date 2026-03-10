@@ -2,7 +2,7 @@
 name: flutter-theme-context-l10n
 description: Patterns for Flutter app theming (light/dark), BuildContext access extensions, and MaterialApp localization delegates setup.
 metadata:
-  author: Stanislav [MADTeacher] Chernyshev
+  author: Maxkishchenko
   version: "1.0"
 ---
 

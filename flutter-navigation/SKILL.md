@@ -1,9 +1,9 @@
 ---
 name: flutter-navigation
-description: Comprehensive guide for Flutter navigation and routing including Navigator API, go_router, deep linking, passing/returning data, and web-specific navigation. Use when implementing screen transitions, configuring routing systems, setting up deep links, handling browser history, or managing navigation state in Flutter applications.
+description: Comprehensive guide for Flutter navigation and routing including Navigator API, go_router, auto_route, deep linking, passing/returning data, and web-specific navigation. Use when implementing screen transitions, configuring routing systems, setting up deep links, handling browser history, or managing navigation state in Flutter applications.
 metadata:
-  author: Stanislav [MADTeacher] Chernyshev
-  version: "1.0"
+  author: Maxkishchenko
+  version: "1.1"
 ---
 
 # Flutter Navigation
@@ -30,6 +30,14 @@ Example: `assets/navigator_basic.dart`
 - Production applications with scalable architecture
 
 Example: `assets/go_router_basic.dart`
+
+### Use auto_route (Code Generation) When:
+- You want strongly typed routes and arguments
+- You need route guards and nested routers with less boilerplate
+- You want both path-based deep linking and generated route classes
+- Your team prefers scalable router configuration with code generation
+
+For setup and patterns: `references/auto_route-guide.md`
 
 ### Avoid Named Routes
 Flutter team does NOT recommend named routes. They have limitations:
@@ -91,6 +99,12 @@ For server setup: `references/web-navigation.md`
 - `context.push('/path')` - add to stack
 - `context.pop()` - go back
 
+### auto_route Navigation
+- `context.router.push(const BooksRoute())` - add typed route
+- `context.router.replace(const BooksRoute())` - replace route
+- `context.router.navigate(const BooksRoute())` - smart web/native navigation
+- `context.router.pop()` - go back
+
 ### Navigator Navigation
 - `Navigator.push()` - add route to stack
 - `Navigator.pop()` - remove route from stack
@@ -102,7 +116,9 @@ For server setup: `references/web-navigation.md`
 **Error Handling:** Handle 404 and navigation errors
 **Multiple Navigators:** Manage independent navigation stacks
 
-For advanced patterns: `references/go_router-guide.md`
+For advanced patterns:
+- `references/go_router-guide.md`
+- `references/auto_route-guide.md`
 
 ## Decision Guide
 

@@ -3,7 +3,7 @@ name: agents-md-generator
 description: Create or update minimal AGENTS.md files in the repository root and nested module directories using progressive disclosure. Works across heterogeneous projects without assuming any fixed agent folder structure.
 compatibility: Filesystem-based coding agents with read/write access. Script execution optional.
 metadata:
-  author: Stanislav [MADTeacher] Chernyshev
+  author: Maxkishchenko
   version: "1.0"
 ---
 

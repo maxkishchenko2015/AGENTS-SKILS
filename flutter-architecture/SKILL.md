@@ -2,7 +2,7 @@
 name: flutter-architecture
 description: Comprehensive guide for architecting Flutter applications with flutter_bloc using Bloc for complex logic and Cubit for simple logic, layered architecture, and feature-first project organization. Use when structuring scalable Flutter apps with predictable state management.
 metadata:
-  author: Stanislav [MADTeacher] Chernyshev
+  author: Maxkishchenko
   version: "1.1"
 ---
 

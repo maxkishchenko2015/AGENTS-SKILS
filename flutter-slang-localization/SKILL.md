@@ -2,7 +2,7 @@
 name: flutter-slang-localization
 description: Type-safe Flutter localization with Slang and slang_flutter. Covers setup, code generation, MaterialApp integration, locale switching, and CLI workflows.
 metadata:
-  author: Stanislav [MADTeacher] Chernyshev
+  author: Maxkishchenko
   version: "1.0"
 ---
 

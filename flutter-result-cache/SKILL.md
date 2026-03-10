@@ -2,7 +2,7 @@
 name: flutter-result-cache
 description: Use Result pattern and BehaviorSubject local cache in Flutter/Dart architecture. Apply when you need typed success/failure modeling and reactive in-memory cache streams in repositories.
 metadata:
-  author: Stanislav [MADTeacher] Chernyshev
+  author: Maxkishchenko
   version: "1.0"
 ---
 

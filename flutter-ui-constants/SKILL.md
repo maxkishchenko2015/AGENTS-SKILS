@@ -2,7 +2,7 @@
 name: flutter-ui-constants
 description: Define and use centralized Flutter UI constants for margins, radii, font sizes, icon sizes, button sizes, breakpoints, and layout metrics. Use when creating or migrating design tokens and spacing systems in Flutter apps.
 metadata:
-  author: Stanislav [MADTeacher] Chernyshev
+  author: Maxkishchenko
   version: "1.0"
 ---
 
